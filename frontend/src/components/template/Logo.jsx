@@ -1,10 +1,12 @@
 import React from "react";
 import "./Logo.css";
-import logo from '../../assets/img/intratec.png';
+import { Link } from "react-router-dom";
+import logo from "../../assets/img/intratec.png";
 
-export default props => 
-    <aside className="logo">
-      <a href="/" className="logo">
-        <img src={logo} alt="logo" />
-      </a>
-    </aside>
+export default props => (
+  <aside className="logo">
+    <Link to="/" className="logo">
+      <img src={logo} alt="logo" />
+    </Link>
+  </aside>
+);
